@@ -1,0 +1,126 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #dd87ca;
+	overflow: hidden;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.yes-btn {
+	background-color: #22c55e;
+}
+
+.yes-btn:hover {
+	background-color: #48f325;
+	box-shadow: 0 0 10px #2cff01;
+}
+
+.no-btn {
+	background-color: #ef4444;
+	margin-left: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	text-align: left;
+	padding: 0.5em auto;
+	white-space: nowrap;
+}
+
+.no-btn:hover {
+	background-color: #e60f0f;
+	box-shadow: 0 0 10px #fd2020;
+}
+
+.btn {
+	padding: 0.7em;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.themku-bg {
+	position: relative;
+	top: -10px;
+	width: 100vw;
+	height: 105vh;
+	background-image: url('https://media1.tenor.com/m/PSOvpP3Cu8sAAAAd/doge-cute.gif');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: -1;
+}
+
+.themku-overlay {
+	position: absolute;
+	width: 100vw;
+	height: 105vh;
+	z-index: 100;
+	background-color: #fff;
+}
+
+.dogo-img {
+	width: 220px;
+	border-radius: 15px;
+	box-shadow: 0 0 35px #830f6a;
+}
+
+.question {
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.6rem;
+	margin: 1.6em 0;
+}
+
+.back-btn {
+	position: absolute;
+	top: 3em;
+	right: 3em;
+	padding: 0.5em 1em;
+	border-radius: 8px;
+	text-decoration: none;
+	background-color: #fff;
+	transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.back-btn:hover {
+	background-color: #d86cc1;
+	color: #fff;
+	box-shadow: 0 2px 15px #d420ad;
+}
+
+.heart {
+	position: fixed;
+	font-size: 2.5rem;
+	top: -1vh;
+	transform: translateY(0);
+	animation: fall 3s linear forwards;
+	z-index: 1000;
+}
+
+@keyframes fall {
+	from {
+		transform: translateY(0vh) translateX(-10vw);
+	}
+	to {
+		transform: translateY(105vh) translateX(10vw);
+	}
+}
